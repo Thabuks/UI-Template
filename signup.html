@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <!-- Add some meta tags to aid in SEO -->
+    <meta name="Muthabuku" content="Andela Project" />
+    <meta name="Home page" content="This is the home page for my website." />
+      <!-- Add some meta tags to enable mobile view devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="test.css" type="text/css">
+    <title>login</title>
+</head>
+  <body>
+    <div class="header">
+      <img id="logo" src="img/crowdsourcing.png">
+      <div id="home">
+          <span><a href="Home.html">Home</a></span>
+      </div>
+      <div id="Meetups">
+          <span><a href="meetups.html">Meetups</a></span>
+      </div>
+      <table>
+        <td id="sign_in">
+          <div>
+            <span><a href="login.html">Log in</a></span>
+        </div>
+      </td>
+        <td id="sign_up">
+          <div >
+            <span><a href="login.html">Sign up</a></span>
+        </div>
+       </td>
+
+      </table>
+  </div>
+  <div class="body1">
+        <div class="login-temp">
+          <div class="form3">
+            <form class="register-form" action="meetups.com.html" method="post">
+              <input type="email" placeholder="EMail" required/>
+              <input type="text" placeholder="password" required/>
+              <input type="text" placeholder="User name" />
+              <button><a href="meetups.html">Create</a></button>
+              <p class="message">Registered?<a href="#">Log in</a></p>
+            </form>
+
+            <form class="login-form" action="meetups.html" method="post">
+              <input type="email" name="" value="" placeholder="Email" required/>
+              <input type="password" name="" value="" placeholder="password" required/>
+              <button>log in</button>
+              <p class="message"><a href="#">Forgot Password?</a></p>
+              <p class="message">Not Registered? <a href="#">Register</a></p>
+            </form>
+
+          </div>
+
+        </div>
+</div>
+        <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+        <script>
+          $('.message a').click(function(){
+          $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+          });
+        </script>
+
+
+        <div id="footer">
+          <span> &copy; 2018 Crowd-Sourcing Questions &#160;</span>
+        </div>
+  </body>
+</html>
