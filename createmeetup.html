@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <!-- Add some meta tags to aid in SEO -->
+    <meta name="Muthabuku" content="Andela Project" />
+    <meta name="Home page" content="This is the home page for my website." />
+      <!-- Add some meta tags to enable mobile view devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="test.css" type="text/css">
+    <title>Crowd-Source</title>
+</head>
+<body>
+          <div class="header">
+            <img id="logo" src="img/crowdsourcing.png">
+            <div id="home">
+                <span><a href="Home.htlm">Home</a></span>
+            </div>
+            <div id="Meetups">
+                <span><a href="meetups.html">Meetups</a></span>
+            </div>
+            <table>
+              <td id="sign_in">
+                <div>
+                  <span><a href="login.html">Log in</a></span>
+              </div>
+            </td>
+              <td id="sign_up">
+                <div >
+                  <span><a href="login.html">Sign up</a></span>
+              </div>
+             </td>
+
+            </table>
+        </div>
+        <hr>
+
+        <form class="createmeetup">
+					<span >
+						<strong><em>Create your meetup and choose your desired category</em></strong>
+					</span>
+          <hr>
+					<div >
+            <span><em>Upload your Meetup image.</em></span>
+            <input type="file" name="filename" accept="image/gif, image/jpeg, image/png">
+            <div >
+							<input type="radio" name="choice" value="first&second" checked="checked">
+							<label for="radio1">
+								Display first & second group name
+							</label>
+						</div>
+
+						<div>
+							<input type="radio" name="choice" value="get-quote">
+							<label  for="radio2">
+								Display first name
+							</label>
+						</div>
+					</div>
+
+					<div  data-validate="Group Name is required">
+						<input  type="text" name="name" placeholder="Group First-Name">
+						<span></span>
+					</div>
+          <div  data-validate="Group Name is required">
+            <input  type="text" name="name" placeholder="Group Last-Name">
+            <span></span>
+          </div>
+
+					<div data-validate = "Your name required: Your Name">
+						<input  type="text" name="name" placeholder="Your Name">
+						<span></span>
+					</div>
+
+					<div>
+						<div>
+              <span>category</span>
+							<select name="service">
+								<option>Economics</option>
+								<option>Maths</option>
+								<option>Programming</option>
+								<option>Data science</option>
+                <option>Politics</option>
+							</select>
+						</div>
+						<span></span>
+					</div>
+
+					<div data-validate = "Message is required">
+						<textarea id="messagearea" name="message" placeholder="Your Message"></textarea>
+						<span></span>
+					</div>
+
+					<div>
+						<button id="button-move">
+							Submit
+						</button>
+					</div>
+				</form>
+
+<div class="clearfix"></div>
+  <div id="footer">
+    <span> &copy; 2018 Crowd-Sourcing Questions &#160;</span>
+  </div>
+</body>
+</html>
