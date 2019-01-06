@@ -1,0 +1,223 @@
+.body1 {
+background-color: #FFFF66;
+height: 100vh;
+background-size: cover;
+background-position: center;
+}
+
+
+.login-temp {
+width: 360px;
+padding: 10% 0 0;
+margin: auto;
+}
+
+
+.form3{
+  position: relative;
+  z-index: 1;
+  background: rgb(255,255,255);
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding:  45px;
+  text-align: center;
+}
+
+.form3 input {
+  font-family: "Roboto", "Sans-serif";
+  outline: 1;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form3 button{
+  font-family: "Roboto", "Sans-serif";
+  text-transform: uppercase;
+  outline 0;
+  background: #4CAF50;
+  width: 100px;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form3 button: hover,.form3 button: active{
+  background: #43A047;
+}
+
+.form3 .message{
+  margin:15px 0 0;
+  color: aliceblue;
+  font-size: 12px;
+}
+.form3 message a{
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.form3 .register-form{
+  display: none;
+}
+
+.Reset{
+    display: none;
+}
+
+.header{
+  width: 1150px;
+  height: 70px;
+  background: grey;
+}
+#logo{
+  width: 150px;
+  height: 70px;
+  float: left;
+}
+#home{
+  height: 70px;
+  border-left-width: 1px;
+  border-left-color: black;
+  font-size: 24px;
+  float: left;
+  padding-left: 10px;
+}
+#Meetups{
+  height: 70px;
+  border-left-width: 1px;
+  border-left-color: black;
+  font-size: 24px;
+  float: left;
+  padding-left: 10px;
+}
+#sign_in{
+  height: 70px;
+  border-left-width: 1px;
+  border-left-color: black;
+  font-size: 24px;
+  padding-left: 10px;
+  border: none;
+  float: right;
+  margin-left: 10px;
+}
+#sign_up{
+  height: 70px;
+  border-left-width: 1px;
+  border-left-color: black;
+  font-size: 24px;
+  float: right;
+  padding-left: 10px;
+  border: none;
+  margin-left: 600px;
+}
+.container{
+background-color: white;
+margin-left: 60px;
+margin-right: 60px;
+padding: 40px;
+font-size: 15px;
+font-family: "Times New Roman", Times, serif;
+float: none;
+}
+.creator_mp{
+  float: left;
+  margin-right: 10px;
+  width: 30%;
+  height: 100%;
+  position: absolute;
+}
+.split{
+  float: right;
+  width: 70%;
+  height: 100%;
+  margin-top: 0px;
+}
+#start_mp{
+  height: 100px;
+  width: 150px;
+}
+#below{
+  margin-bottom: 10px;
+  height: 40px;
+}
+#allnames{
+  margin-top: 0px;
+  font-size: 26px;
+  float: left;
+
+}
+#allnames2{
+  font-size: 26px;
+  float: left;
+  margin-top: 20px;
+}
+
+#imagefix{
+  width: 264px;
+  height: 150px
+}
+
+.first_table table, td {
+  border: 1px solid black;
+}
+
+#member_meetup{
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#create-p{
+  align-content: center;
+}
+.createmeetup{
+    width: 600px;
+    margin: 0 auto;
+    font-size: 24px;
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 50px;
+}
+.createpost{
+    width: 600px;
+    margin: 0 auto;
+    font-size: 24px;
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 50px;
+    background-color: 	#00FFFF;
+}
+
+#radiospaces{
+  margin-bottom: 10px;
+}
+
+#groupspaces{
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+#messagearea{
+  width: 350px;
+  height: 200px;
+
+}
+#button-move{
+  margin-left: 150px;
+  width: 150px;
+  height: 30px;
+  margin-bottom: 30px;
+}
+#footer{
+text-align: center;
+width: 1100px;
+float: none;
+position: absolute;
+
+}
