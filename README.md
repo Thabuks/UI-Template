@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Thabuks/UI-Template.svg?branch=master)](https://travis-ci.org/Thabuks/UI-Template)
+[![Build Status](https://travis-ci.com/Thabuks/UI-Template.svg?branch=master)](https://travis-ci.com/Thabuks/UI-Template)
 
 # UI-Template
 Crowd-source Questions
