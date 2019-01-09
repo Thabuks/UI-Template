@@ -37,7 +37,7 @@ go through the files within the folder
 
 Authors
 
-John Muthabuku License
+by John Muthabuku License
 
 This project is licensed under the MIT License. See License for details. Contribution
 
