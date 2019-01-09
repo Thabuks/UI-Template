@@ -3,9 +3,11 @@
 # UI-Template
 Crowd-source Questions
 
+
 This is basically a platform where a user is able to create an account, can post questions, comment to already posted questions, create a meetup, delete his/her already created meetups, and can vote|dwnvote to a question asked. 
 
 Summary
+
 
 This platform offers the user the ability to create an account, can post questions, comment to already posted questions, create a meetup, delete his/her already created meetups, and can vote|dwnvote to a question asked. 
 
