@@ -1,7 +1,9 @@
 [![Build Status](https://travis-ci.com/Thabuks/UI-Template.svg?branch=develop)](https://travis-ci.com/Thabuks/UI-Template)
 
 # UI-Template
+
 Crowd-source Questions
+
 
 This is basically a platform where a user is able to create an account, can post questions, comment to already posted questions, create a meetup, delete his/her already created meetups, and can vote|dwnvote to a question asked. 
 
@@ -35,7 +37,7 @@ go through the files within the folder
 
 Authors
 
-John Muthabuku License
+by John Muthabuku License
 
 This project is licensed under the MIT License. See License for details. Contribution
 
