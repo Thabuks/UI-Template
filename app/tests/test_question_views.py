@@ -81,4 +81,4 @@ class TestQuestions(unittest.TestCase):
         q_resp = json.loads(response.data.decode(
             'utf-8', self.app.config['SECRET_KEY']))
         self.assertEqual(response.status_code, 404)
-        self.assertEqual(q_resp["error"], "such a question could not found")
+        self.assertEqual(q_resp["error"], "Sorry we couldn't find your question")
