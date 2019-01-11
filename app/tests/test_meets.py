@@ -90,6 +90,7 @@ class Testing_Meetups(Testing):
         response = self.client.get(
             '/api/v1/meetups/upcoming', data=json.dumps(self.meetup1), content_type="application/json")
         self.assertEqual(response.status_code, 200)
+        
 
     def test_getsinglemeetup_success(self):
         Meetups.append(self.meetup1created)

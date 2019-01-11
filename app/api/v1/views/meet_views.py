@@ -57,7 +57,14 @@ def specific_meetup_record(meetup_id):
 
 @userviews.route('/meetups', methods=['GET'])
 def get_allmeetup():
-if Meetups == []:
-return jsonify({"status": 404, "error": "Meetups not found"}), 404
+    if Meetups == []:
+        return jsonify({"status": 404, "error": "Meetups not found"}), 404
 
-return jsonify({"status": 200, "data": Meetups}), 200
+    return jsonify({"status": 200, "data": Meetups}), 200
+
+@userviews.route('/meetup/upcoming', methods=['GET'])
+def rsvp_coming_meetup():
+    if Meetups == []:
+        return jsonify({"status": 404, "error": "Sorry meetups not found"}), 404
+
+    return jsonify({"status": 200, "data": Meetups}), 200
