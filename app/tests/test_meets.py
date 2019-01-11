@@ -112,3 +112,4 @@ class Testing_Meetups(Testing):
         response = self.client.delete(
             '/api/v1/meetups/1', data=json.dumps(self.meetup1), content_type="application/json")
         self.assertEqual(response.status_code, 200)
+
