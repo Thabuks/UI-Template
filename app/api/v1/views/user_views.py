@@ -1,3 +1,4 @@
+
 from flask import Blueprint, request, jsonify
 import datetime
 from app.api.v1.models.models import Users
@@ -48,6 +49,7 @@ def user_signup():
 
     except:
         return jsonify({"status": 417, "error": "signup data is required"}), 417
+
 
 
 
