@@ -56,7 +56,7 @@ class Testing(unittest.TestCase):
         pass
 
 
-class TestMeetup(Testing):
+class Testing_Meetups(Testing):
     def test_createdmeetup_success(self):
         response = self.client.post(
             '/api/v1/meetups', data=json.dumps(self.meetup1), content_type="application/json")
