@@ -2,7 +2,7 @@ from flask import Blueprint, request, jsonify, make_response
 
 USERVIEW =Blueprint('USERVIEW',__name__)
 
-@USERVIEW.route('/auth/signin', methods =['POST'])
+@USERVIEW.route('/signin', methods =['POST'])
 def landing():
     """This is the login method"""
     data = request.get_json()

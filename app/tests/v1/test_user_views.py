@@ -22,7 +22,7 @@ class TestUserviewEndpoints(unittest.TestCase):
     def test_landing(self):
         """Test if the user registration is functions efficiently"""
         # This self.app is the test client
-        response = self.app.post('/auth/signin',
+        response = self.app.post('/signin',
                                  data = json.dumps(self.data),
                                  content_type="application/json")
 
