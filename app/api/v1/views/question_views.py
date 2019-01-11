@@ -39,3 +39,31 @@ def adding_a_meetupquestion():
 
     except:
         return jsonify({"status": 204, "error": "Kindly note that the meetup data is required"}), 204
+
+
+@userviews.route("/question/<question_id>/upvote", methods=["PATCH"])
+def user_upvote(question_id):
+    try:
+        question_id = int(question_id)
+    except:
+        return jsonify({"status": 400, "error": "question id doesn't exist"}), 400
+
+    for question in Questions:
+        if question["id"] == question_id:
+            return jsonify({"status": 202, "data": "You have just voted to this question"}), 202
+
+    return jsonify({"status": 404, "error": "We can't find such a question"}), 404
+
+
+@userviews.route("/questions/<question_id>/downvote", methods=["PATCH"])
+def downvote_quiz(question_id):
+    try:
+        question_id = int(question_id)
+    except:
+        return jsonify({"status": 400, "error": "question id doesn't exist"}), 400
+
+    for question in Questions:
+        if question["id"] == question_id:
+            return jsonify({"status": 200, "data": "You have just downvoted this question"}), 200
+
+    return jsonify({"status": 404, "error": "question not found"}), 404
