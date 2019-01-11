@@ -39,3 +39,18 @@ def create_meetup():
         return jsonify({"status": 204, "error": "Meetup data is required"}), 204
 
 
+@userviews.route('/meetup/<meetup_id>', methods=['GET'])
+def specific_meetup_record(meetup_id):
+    if Meetups == []:
+        return jsonify({"status": 404, "error": "Sorry we can't find such a meetup"}), 404
+
+    try:
+        meetup_id = int(meetup_id)
+    except:
+        return jsonify({"status": 400, "error": "Check your id again. Use only integers"}), 400
+
+    for meeting in Meetups:
+        if meeting["id"] == meetup_id:
+            return jsonify({"status": 200, "data": meeting})
+
+    return jsonify({"status": 404, "data": "meetup not found"}), 404
