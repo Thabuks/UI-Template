@@ -54,3 +54,10 @@ def specific_meetup_record(meetup_id):
             return jsonify({"status": 200, "data": meeting})
 
     return jsonify({"status": 404, "data": "meetup not found"}), 404
+
+@userviews.route('/meetups', methods=['GET'])
+def get_allmeetup():
+if Meetups == []:
+return jsonify({"status": 404, "error": "Meetups not found"}), 404
+
+return jsonify({"status": 200, "data": Meetups}), 200
